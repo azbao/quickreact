@@ -20,27 +20,26 @@ const CourseList = (props) => (
         <div className="one">
             <h5>{props.courses.F101.term} CS {props.courses.F101.number}</h5>
             <p>{props.courses.F101.title}</p>
-            {/* <hr class="absolute-hr" /> */}
-            <hr />
-            <p>{props.courses.F101.meets}</p>
+            <hr className="absolute-hr" />
+            <p className="times">{props.courses.F101.meets}</p>
         </div>
         <div className="two">
             <h5>{props.courses.F110.term} CS {props.courses.F110.number}</h5>
             <p>{props.courses.F110.title}</p>
-            <hr />
-            <p>{props.courses.F110.meets}</p>
+            <hr className="absolute-hr" />
+            <p className="times">{props.courses.F110.meets}</p>
         </div>
         <div className="three">
             <h5>{props.courses.S313.term} CS {props.courses.S313.number}</h5>
             <p>{props.courses.S313.title}</p>
-            <hr />
-            <p>{props.courses.S313.meets}</p>
+            <hr className="absolute-hr" />
+            <p className="times">{props.courses.S313.meets}</p>
         </div>
         <div className="four">
             <h5>{props.courses.S314.term} CS {props.courses.S314.number}</h5>
             <p>{props.courses.S314.title}</p>
-            <hr />
-            <p>{props.courses.S314.meets}</p>
+            <hr className="absolute-hr" />
+            <p className="times">{props.courses.S314.meets}</p>
         </div>
     </div>
 );

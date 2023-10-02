@@ -8,15 +8,15 @@
 
 .absolute-hr {
     position: absolute;
-    top: 175px;
-    left: 20px;
-    width: 80%;
+    top: 70%;
+    left: 5%;
+    width: 90%;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 14rem);
-    grid-template-rows: 250px;
+    grid-template-rows: 225px;
     /* grid-auto-rows: minmax(100px, auto); */
     column-gap: 10px;
 }
@@ -25,32 +25,35 @@
     position: relative;
     grid-column: 1;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid black;
 }
 
 .two {
+    position: relative;
     grid-column: 2;
     border-radius: 10px;
-    padding:20px;
+    padding:25px;
     border: 1px solid black;
 }
 
 .three {
+    position: relative;
     grid-column: 3;
     border-radius: 10px;
-    padding:20px;
+    padding:25px;
     border: 1px solid black;
 }
 
 .four {
+    position:relative;
     grid-column: 4;
     border-radius: 10px;
-    padding:20px;
+    padding:25px;
     border: 1px solid black;
 }
 
 .times {
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
 }

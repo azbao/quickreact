@@ -1,0 +1,56 @@
+/* .courseList .card-footer {
+    
+} */
+
+/* hr {
+    margin-top: 30px;
+} */
+
+.absolute-hr {
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    width: 80%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 14rem);
+    grid-template-rows: 250px;
+    /* grid-auto-rows: minmax(100px, auto); */
+    column-gap: 10px;
+}
+
+.one {
+    position: relative;
+    grid-column: 1;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.two {
+    grid-column: 2;
+    border-radius: 10px;
+    padding:20px;
+    border: 1px solid black;
+}
+
+.three {
+    grid-column: 3;
+    border-radius: 10px;
+    padding:20px;
+    border: 1px solid black;
+}
+
+.four {
+    grid-column: 4;
+    border-radius: 10px;
+    padding:20px;
+    border: 1px solid black;
+}
+
+.times {
+    position: absolute;
+    bottom: 10px;
+}

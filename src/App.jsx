@@ -2,7 +2,9 @@ import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Banner from './components/banner.jsx';
-import CourseList from './components/CourseList.jsx'
+import CourseList from './components/CourseList.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const schedule = {
     title: "CS Courses for 2018-2019",
@@ -35,13 +37,15 @@ const schedule = {
 };
 
 const App = () => {
-
+//<div class="container">
     return (
         <div>
             <Banner title={schedule.title} />
             <CourseList courses={schedule.courses} />
         </div>
     );
+//</div>
 };
+
 
 export default App;

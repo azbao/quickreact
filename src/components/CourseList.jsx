@@ -1,7 +1,7 @@
 import './CourseList.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
-const CourseList = (props) => (
+const CourseList = ({courses}) => (
     // <div className="card" style="width: 18rem;">
     //     <div className="card-body">
     //         <h5 className="card-title">{props.courses.F101.term} CS {props.courses.F101.number}</h5>
@@ -16,8 +16,17 @@ const CourseList = (props) => (
     //     {props.courses.S313.term} CS {props.courses.S313.number}: {props.courses.S313.title}<br />
     //     {props.courses.S314.term} CS {props.courses.S314.number}: {props.courses.S314.title}</p>
     // </div>
+
     <div className="container">
-        <div className="one">
+         {Object.entries(courses).map(([id, course]) => (
+             <div className="item" key={id}>
+                <h5>{course.term} CS {course.number}</h5>
+                <p>{course.title}</p>
+                <hr className="absolute-hr" />
+                <p className="times">{course.meets}</p>
+             </div>
+         ))}
+        {/* <div className="one">
             <h5>{props.courses.F101.term} CS {props.courses.F101.number}</h5>
             <p>{props.courses.F101.title}</p>
             <hr className="absolute-hr" />
@@ -40,7 +49,7 @@ const CourseList = (props) => (
             <p>{props.courses.S314.title}</p>
             <hr className="absolute-hr" />
             <p className="times">{props.courses.S314.meets}</p>
-        </div>
+        </div> */}
     </div>
 );
 

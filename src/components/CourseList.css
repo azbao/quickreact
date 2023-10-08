@@ -29,3 +29,8 @@
     position: absolute;
     bottom: 1px;
 }
+
+.item.selected {
+    background-color:lemonchiffon;
+    color: green;
+  }

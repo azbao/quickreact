@@ -1,5 +1,4 @@
 import TermSelector, {terms} from './TermSelector.jsx';
-import CourseList from './CourseList.jsx';
 import CoursePage from './CoursePage.jsx';
 import { useState } from 'react';
 

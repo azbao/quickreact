@@ -2,6 +2,7 @@ import { useState } from 'react';
 import CourseList from "./CourseList";
 import Modal from './Modal';
 import Schedule from './Schedule';
+import { scheduleConflict } from '../utilities/conflicts';
 
 const CoursePage = ({selection, courses}) => {
   const [selected, setSelected] = useState([]);
@@ -11,14 +12,20 @@ const CoursePage = ({selection, courses}) => {
   const closeModal = () => setOpen(false);
 
   const toggleSelected = (item) => {
-    setSelected(
-        selected.includes(item)
-        ? selected.filter(x => x !== item)
-        : [...selected, item]
-    );
-  }
+    // selected.every(select)
+    // console.log(item, selected)
+    if (!scheduleConflict(item, selected)) {
+        setSelected(
+            selected.includes(item)
+            ? selected.filter((x) => x !== item)
+            : [...selected, item]
+        );
+    }else {
+        console.log("hello", item, selected)
+        null
+    }}
   
-  console.log(selected);
+  //console.log(selected);
   return (
     <div>
         <nav className='d-flex'>
@@ -28,7 +35,7 @@ const CoursePage = ({selection, courses}) => {
             <Schedule selected={selected} />
         </Modal>
         < br/>
-        <CourseList selection = {selection} courses={courses} selected={selected} toggleSelected={toggleSelected} />
+        <CourseList selection={selection} courses={courses} selected={selected} toggleSelected={toggleSelected} />
     </div>
   );
 };

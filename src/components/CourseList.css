@@ -33,4 +33,9 @@
 .item.selected {
     background-color:lemonchiffon;
     color: green;
-  }
+}
+
+.item.unavailable {
+    background-color: grey;
+    cursor: not-allowed;
+}

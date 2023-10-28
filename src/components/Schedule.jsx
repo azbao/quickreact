@@ -11,12 +11,13 @@ const Schedule = ({selected}) => (
             selected.length === 0
             ? <div>
                 <h5>No courses selected! </h5>
-                <p>Select courses by clicking on their icons in the course list.</p>
+                <p>Select courses by clicking on them in the course list.</p>
             </div>
             : selected.map(course => (
                 <div key={course}>
                 {course.term} CS {course.number}: {course.title}
                 <p>{course.meets}</p>
+                <hr />
                 </div>
             ))
         }

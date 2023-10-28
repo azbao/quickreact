@@ -1,12 +1,11 @@
 import './Modal.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 // https://codebuckets.com/2021/08/08/bootstrap-modal-dialog-in-react-without-jquery/
 
 
 const Modal = ({ children, open, close }) => (
   <div
-    className={`modal${open ? '-show' : ''}`}
+    className={`modal ${open ? 'modal-show' : ''}`}
     tabIndex="-1"
     role="dialog"
     onClick={(evt) => {

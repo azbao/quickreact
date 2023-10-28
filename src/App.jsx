@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+// import './App.css';
 import Banner from './components/banner.jsx';
 import TermPage from './components/TermPage.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {useJsonQuery} from './utilities/fetch.jsx';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 

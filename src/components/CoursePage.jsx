@@ -29,7 +29,7 @@ const CoursePage = ({selection, courses}) => {
   return (
     <div>
         <nav className='d-flex'>
-            <button className="btn btn-outline-dark" onClick={openModal}>Schedule<i className="bi bi-cart4"></i></button>
+            <button className="btn btn-outline-dark ms-auto" onClick={openModal}>Schedule <i className="bi bi-cart4"></i></button>
         </nav>
         <Modal open={open} close={closeModal}>
             <Schedule selected={selected} />
